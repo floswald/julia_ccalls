@@ -3692,6 +3692,13 @@ void nwspgr ( void rule ( int n, double x[], double w[] ),
 }
 /******************************************************************************/
 
+int nwspgr_size_wrap (int dim, int k ){
+   int out;
+   out = nwspgr_size( kpn_order, dim, k);
+   return out;
+}
+
+
 int nwspgr_size ( int rule_order ( int l ), int dim, int k )
 
 /******************************************************************************/
